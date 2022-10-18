@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>From Registrasi</title>
+</head>
+<body>
+    <form action="proses.php" method="post">
+        <fieldset>
+            <legend>FROM PENDAFTARAN SISWA BARU</legend>
+            <p>
+                <label for="nama">Nama :</label>
+                <input type="text" name="nama" placeholder="Nama Lengkap...">
+            </p>
+            <p>
+                <label for="TTL">Tanggal Lahir :</label>
+                <input type="date" name="tanggal" >
+            </p>
+            <P>
+                <label for="Alamat">Alamat :</label>
+                <input type="text" name="alamat" placeholder="Alamat Lengkap...">
+            </P>
+            <p>
+                <label for="email">Email :</label>
+                <input type="email" name="email" placeholder="Your email...">
+            </p>
+            <p>
+                <label for="JK">Jenis Kelamin :</label>
+                <label for="LK"><input type="radio" name="jenis_kelamin" value="laki-laki">Laki-Laki</label>
+                <label for="PR"><input type="radio" name="jenis_kelamin" value="perempuan">Perempuan</label>
+            </p>
+            <p>
+                <label for="agama">Agama :</label>
+                <select name="agama">
+                    <option value=" ">Pilih Agama</option>
+                    <option value="islam">Islam</option>
+                    <option value="kristen">Kristen</option>
+                    <option value="hindu">Hindu</option>
+                    <option value="budha">Budha</option>
+                    <option value="Ops">Opsional</option>
+                </select>
+            </p>
+            <p>
+                <label for="lulusan">Tahun Lulus :</label>
+                <input type="text" name="lulus" placeholder="ketikan tahun lulus">
+            </p>
+            <p>
+                <label for="jurusan">Pilihan Jurusan <br>(max 2 jurusan)</label><br>
+                <label for="jurusan"><input type="checkbox" name="TKJ" value="TKJ">TKJ</label>
+                <label for="jurusan"><input type="checkbox" name="Oto" value="Otomotif">Otomotif</label>
+                <label for="jurusan"><input type="checkbox" name="aktn" value="Akutansi">Akutansi</label>
+                <label for="jurusan"><input type="checkbox" name="IPA" value="IPA">IPA</label>
+                <label for="jurusan"><input type="checkbox" name="ips" value="ips">IPS</label>
+            </p>
+            <p>
+                <label for="label">Ceritakan mengenai diri anda</label>
+                <textarea name="biografi" id="" cols="30" rows="10"></textarea>
+            </p>
+            <input type="submit" name="tombol" value="kirim"/>
+        </fieldset>
+    </form>
+</body>
+</html>
